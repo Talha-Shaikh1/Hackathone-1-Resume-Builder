@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <div class="container">
+    <form id="resumeForm">
+      <h2>Resume Builder</h2>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="profession">Profession:</label>
+      <input type="text" id="profession" placeholder="Ex: Web Developer" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" placeholder="Enter your address" required>
+
+      <label for="about">Profile (About Yourself):</label>
+      <textarea id="about" maxlength="250" placeholder="Write a brief profile" required></textarea>
+
+      <label for="education">Education:</label>
+      <input type="text" id="educationInput" placeholder="Enter your education">
+      <button type="button" id="addEducationBtn">Add Education</button>
+      <ul id="educationList"></ul>
+
+      <!-- Image Upload -->
+      <label for="image">Upload Your Picture:</label>
+      <input type="file" id="image" accept="image/*" required>
+
+      <!-- Skills Section -->
+      <label for="skills">Add Skill:</label>
+      <input type="text" id="skillInput" placeholder="Add a skill">
+      <button type="button" id="addSkillBtn">Add Skill</button>
+      <ul id="skillsList"></ul>
+
+      <!-- Languages Section -->
+      <label for="languages">Add Language:</label>
+      <input type="text" id="languageInput" placeholder="Add a language">
+      <button type="button" id="addLanguageBtn">Add Language</button>
+      <ul id="languagesList"></ul>
+
+      <!-- Father Name -->
+      <label for="fatherName">Father's Name:</label>
+      <input type="text" id="fatherName" placeholder="Enter your father's name" required>
+
+      <!-- NIC -->
+      <label for="nic">NIC #:</label>
+      <input type="text" id="nic" placeholder="Enter your NIC" required>
+
+      <!-- Nationality -->
+      <label for="nationality">Nationality:</label>
+      <input type="text" id="nationality" placeholder="Enter your nationality" required>
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required>
+
+      <!-- Marital Status -->
+      <label for="maritalStatus">Marital Status:</label>
+      <input type="text" id="maritalStatus" placeholder="Enter your marital status" required>
+
+      <!-- Religion -->
+      <label for="religion">Religion:</label>
+      <input type="text" id="religion" placeholder="Enter your religion" required>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
